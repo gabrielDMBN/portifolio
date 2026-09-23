@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta id="meta-description" name="description" content="Portfólio de desenvolvimento de jogos de Gabriel Daher." />
-  <title>Gabriel Daher | Desenvolvedor de Jogos</title>
+  <meta id="meta-description" name="description" content="Game development portfolio by Gabriel Daher." />
+  <title>Gabriel Daher | Game Developer</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +18,11 @@
     <div class="container nav">
       <a class="brand" href="#top">Gabriel Daher</a>
 
-      <nav class="nav-links" aria-label="Navegação principal" data-i18n-aria="navAria">
-        <a href="#projetos" data-i18n="navProjects">Projetos</a>
-        <a href="#sobre" data-i18n="navAbout">Sobre mim</a>
-        <a href="#curriculo" data-i18n="navResume">Currículo</a>
-        <a href="#contato" data-i18n="navContact">Contato</a>
+      <nav class="nav-links" aria-label="Main navigation" data-i18n-aria="navAria">
+        <a href="#projetos" data-i18n="navProjects">Projects</a>
+        <a href="#sobre" data-i18n="navAbout">About</a>
+        <a href="#curriculo" data-i18n="navResume">Resume</a>
+        <a href="#contato" data-i18n="navContact">Contact</a>
       </nav>
 
       <div class="nav-actions">
@@ -30,22 +30,18 @@
           class="nav-control"
           id="language-toggle"
           type="button"
-          aria-label="Mudar idioma para inglês"
+          aria-label="Switch language to Portuguese"
           data-i18n-aria="languageAria"
-        >
-          EN
-        </button>
+        >PT</button>
 
         <button
           class="nav-control"
           id="theme-toggle"
           type="button"
-          aria-label="Alternar entre modo claro e escuro"
-          aria-pressed="false"
+          aria-label="Toggle between light and dark mode"
+          aria-pressed="true"
           data-i18n-aria="themeAria"
-        >
-          Escuro
-        </button>
+        >Light</button>
       </div>
     </div>
   </header>
@@ -54,17 +50,14 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-main">
-          <p class="eyebrow" data-i18n="eyebrow">Desenvolvedor de Jogos / Unity / XR</p>
-          <h1 data-i18n="heroTitle">Jogos, sistemas e experiências interativas.</h1>
+          <p class="eyebrow" data-i18n="eyebrow">Game Developer / Unity / XR</p>
+          <h1 data-i18n="heroTitle">Games, systems and interactive experiences.</h1>
         </div>
 
         <div class="hero-side">
-          <button class="profile-placeholder image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" aria-label="Ampliar foto de Gabriel Daher" data-i18n-aria="profileOpen"><img src="assets/profilePicture.jpg" alt="Foto de Gabriel Daher" data-i18n-alt="profileAlt"></button>
+          <button class="profile-placeholder image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" aria-label="Enlarge photo of Gabriel Daher" data-i18n-aria="profileOpen"><img src="assets/profilePicture.jpg" alt="Photo of Gabriel Daher" data-i18n-alt="profileAlt"></button>
 
-          <p class="hero-copy" data-i18n="heroCopy">
-            Portfólio de projetos de desenvolvimento de jogos, experiências em realidade virtual
-            e trabalhos acadêmicos relacionados a interação e tecnologia.
-          </p>
+          <p class="hero-copy" data-i18n="heroCopy">A portfolio of game development projects, virtual reality experiences and academic work related to interaction and technology.</p>
         </div>
       </div>
     </section>
@@ -73,8 +66,8 @@
       <div class="projects-intro">
         <div class="container">
           <div class="section-heading">
-            <h2 data-i18n="projectsTitle">Projetos</h2>
-            <p data-i18n="projectsSubtitle">Seleção de trabalhos</p>
+            <h2 data-i18n="projectsTitle">Projects</h2>
+            <p data-i18n="projectsSubtitle">Selected work</p>
           </div>
         </div>
       </div>
@@ -83,28 +76,28 @@
         <div class="container">
           <article class="project">
             <div class="project-topline">
-              <span class="project-number" data-i18n="project01">PROJETO 01</span>
+              <span class="project-number" data-i18n="project01">PROJECT 01</span>
               <span class="year">2026</span>
             </div>
             <div class="project-grid">
               <div class="media-stack">
-                <div class="main-media youtube-player"><iframe src="https://www.youtube-nocookie.com/embed/ysR4lTp67mw?rel=0" title="Vídeo de guy VS guy" data-i18n-title="project1Video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="main-media youtube-player"><iframe src="https://www.youtube-nocookie.com/embed/ysR4lTp67mw?rel=0" title="guy VS guy video" data-i18n-title="project1Video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                 <div class="secondary-grid">
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project01Image1Open" aria-label="Ampliar imagem 1 de guy VS guy"><img src="assets/Projetos/GuyVSGuy/guy_VS_guy1.png" alt="guy VS guy — imagem 1" data-i18n-alt="project01Image1" loading="lazy"></button>
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project01Image2Open" aria-label="Ampliar imagem 2 de guy VS guy"><img src="assets/Projetos/GuyVSGuy/guy_VS_guy2.png" alt="guy VS guy — imagem 2" data-i18n-alt="project01Image2" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project01Image1Open" aria-label="Enlarge image 1 from guy VS guy"><img src="assets/Projetos/GuyVSGuy/guy_VS_guy1.png" alt="guy VS guy — image 1" data-i18n-alt="project01Image1" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project01Image2Open" aria-label="Enlarge image 2 from guy VS guy"><img src="assets/Projetos/GuyVSGuy/guy_VS_guy2.png" alt="guy VS guy — image 2" data-i18n-alt="project01Image2" loading="lazy"></button>
                 </div>
               </div>
               <div class="project-copy">
                 <h3>guy VS guy</h3>
-                <p data-i18n="project01Desc">Enfrente um amigo em um duelo estratégico, acelerado e caótico, inspirado na história em quadrinhos SPY vs. SPY, publicada pela revista MAD na década de 1960. Monte armadilhas, sabote o mapa, decifre segredos e roube a maleta do seu adversário. Em um mundo dividido entre preto e branco, faça o que for preciso para garantir a vitória do seu lado.</p>
+                <p data-i18n="project01Desc">Face off against a friend in a strategic, fast-paced, and chaotic 1v1 inspired by the 1960s comic SPY vs. SPY, published by MAD. Set traps, sabotage the map, decode secrets, and steal your opponent’s briefcase. In a world divided between black and white, do whatever it takes to secure victory for your side.</p>
                 <div class="meta">
-                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Tecnologias</span><span class="meta-value">Unity 6 / C#</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Papel</span><span class="meta-value" data-i18n="project01Role">Designer de jogos, programador e designer de níveis</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Plataforma</span><span class="meta-value" data-i18n="project01Platform">PC</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project01Status">Em andamento</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Technologies</span><span class="meta-value">Unity 6 / C#</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Role</span><span class="meta-value" data-i18n="project01Role">Game designer, programmer and level designer</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Platform</span><span class="meta-value" data-i18n="project01Platform">PC</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project01Status">In progress</span></div>
                 </div>
                 <div class="project-links">
-                  <a class="repo-link" href="https://gabrieldmbn.itch.io/guy-vs-guy" target="_blank" rel="noopener noreferrer" data-i18n="gameLink">Jogar no Itch.io ↗</a>
+                  <a class="repo-link" href="https://gabrieldmbn.itch.io/guy-vs-guy" target="_blank" rel="noopener noreferrer" data-i18n="gameLink">Play on Itch.io ↗</a>
                 </div>
               </div>
             </div>
@@ -116,29 +109,29 @@
         <div class="container">
           <article class="project">
             <div class="project-topline">
-              <span class="project-number" data-i18n="project02">PROJETO 02</span>
+              <span class="project-number" data-i18n="project02">PROJECT 02</span>
               <span class="year">2024</span>
             </div>
             <div class="project-grid">
               <div class="media-stack">
-                <div class="main-media youtube-player"><iframe src="https://www.youtube-nocookie.com/embed/eJ8ucGQBrig?rel=0" title="Vídeo de multibeats!" data-i18n-title="project2Video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="main-media youtube-player"><iframe src="https://www.youtube-nocookie.com/embed/eJ8ucGQBrig?rel=0" title="multibeats! video" data-i18n-title="project2Video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                 <div class="secondary-grid">
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project02Image1Open" aria-label="Ampliar imagem 1 de multibeats!"><img src="assets/Projetos/multibeats!/multibeats0.png" alt="multibeats! — imagem 1" data-i18n-alt="project02Image1" loading="lazy"></button>
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project02Image2Open" aria-label="Ampliar imagem 2 de multibeats!"><img src="assets/Projetos/multibeats!/multibeats1.png" alt="multibeats! — imagem 2" data-i18n-alt="project02Image2" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project02Image1Open" aria-label="Enlarge image 1 from multibeats!"><img src="assets/Projetos/multibeats!/multibeats0.png" alt="multibeats! — image 1" data-i18n-alt="project02Image1" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project02Image2Open" aria-label="Enlarge image 2 from multibeats!"><img src="assets/Projetos/multibeats!/multibeats1.png" alt="multibeats! — image 2" data-i18n-alt="project02Image2" loading="lazy"></button>
                 </div>
               </div>
               <div class="project-copy">
                 <h3>multibeats!</h3>
-                <p data-i18n="project02Desc">Jogo musical e rítmico por turnos em formato multijogador competitivo, no qual os jogadores se enfrentam com personagens inspirados na cultura geek.</p>
+                <p data-i18n="project02Desc">Turn-based musical/rhythmic game in multiplayer PvP format, in which players fight against each other, with characters inspired by Geek culture.</p>
                 <div class="meta">
-                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Tecnologias</span><span class="meta-value">Python</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Papel</span><span class="meta-value" data-i18n="project02Role">Programador, designer de jogos e artista</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Plataforma</span><span class="meta-value" data-i18n="project02Platform">PC</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project02Status">Concluído</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Technologies</span><span class="meta-value">Python</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Role</span><span class="meta-value" data-i18n="project02Role">Programmer, game designer and artist</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Platform</span><span class="meta-value" data-i18n="project02Platform">PC</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project02Status">Completed</span></div>
                 </div>
                 <div class="project-links">
-                  <a class="repo-link" href="https://github.com/gabrielDMBN/multibeats" target="_blank" rel="noopener noreferrer" data-i18n="sourceCode">Código-fonte ↗</a>
-                  <a class="repo-link" href="https://gabrieldmbn.itch.io/multi-beats" target="_blank" rel="noopener noreferrer" data-i18n="gameLink">Jogar no Itch.io ↗</a>
+                  <a class="repo-link" href="https://github.com/gabrielDMBN/multibeats" target="_blank" rel="noopener noreferrer" data-i18n="sourceCode">Source code ↗</a>
+                  <a class="repo-link" href="https://gabrieldmbn.itch.io/multi-beats" target="_blank" rel="noopener noreferrer" data-i18n="gameLink">Play on Itch.io ↗</a>
                 </div>
               </div>
             </div>
@@ -150,29 +143,29 @@
         <div class="container">
           <article class="project">
             <div class="project-topline">
-              <span class="project-number" data-i18n="project03">PROJETO 03</span>
+              <span class="project-number" data-i18n="project03">PROJECT 03</span>
               <span class="year">2025</span>
             </div>
             <div class="project-grid">
               <div class="media-stack">
-                <button class="main-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project03Image1Open" aria-label="Ampliar imagem 1 de Trem do Nunca"><img src="assets/Projetos/TremDoNunca/tdn0.png" alt="Trem do Nunca — imagem 1" data-i18n-alt="project03Image1" loading="lazy"></button>
+                <button class="main-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project03Image1Open" aria-label="Enlarge image 1 from Trem do Nunca"><img src="assets/Projetos/TremDoNunca/tdn0.png" alt="Trem do Nunca — image 1" data-i18n-alt="project03Image1" loading="lazy"></button>
                 <div class="secondary-grid">
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project03Image2Open" aria-label="Ampliar imagem 2 de Trem do Nunca"><img src="assets/Projetos/TremDoNunca/tdn1.png" alt="Trem do Nunca — imagem 2" data-i18n-alt="project03Image2" loading="lazy"></button>
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project03Image3Open" aria-label="Ampliar imagem 3 de Trem do Nunca"><img src="assets/Projetos/TremDoNunca/tdn2.png" alt="Trem do Nunca — imagem 3" data-i18n-alt="project03Image3" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project03Image2Open" aria-label="Enlarge image 2 from Trem do Nunca"><img src="assets/Projetos/TremDoNunca/tdn1.png" alt="Trem do Nunca — image 2" data-i18n-alt="project03Image2" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project03Image3Open" aria-label="Enlarge image 3 from Trem do Nunca"><img src="assets/Projetos/TremDoNunca/tdn2.png" alt="Trem do Nunca — image 3" data-i18n-alt="project03Image3" loading="lazy"></button>
                 </div>
               </div>
               <div class="project-copy">
                 <h3>Trem do Nunca</h3>
-                <p data-i18n="project03Desc">Um curto point and click de terror ambientado em uma misteriosa estação de trem abandonada. Explore o local, descubra o que aconteceu ali e tome decisões que alteram o rumo da experiência. Cada escolha pode aproximá-lo da verdade. Você deseja embarcar?</p>
+                <p data-i18n="project03Desc">A short point-and-click horror game set in a mysterious abandoned train station. Explore the area, discover what happened there and make decisions that change the course of the experience. Each choice may bring you closer to the truth. Do you wish to board?</p>
                 <div class="meta">
-                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Tecnologias</span><span class="meta-value">Godot / GDScript / Dialogic</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Papel</span><span class="meta-value" data-i18n="project03Role">Desenvolvedor</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Plataforma</span><span class="meta-value" data-i18n="project03Platform">PC / Dispositivos móveis</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project03Status">Protótipo</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Technologies</span><span class="meta-value">Godot / GDScript / Dialogic</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Role</span><span class="meta-value" data-i18n="project03Role">Developer</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Platform</span><span class="meta-value" data-i18n="project03Platform">PC / Mobile</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project03Status">Prototype</span></div>
                 </div>
                 <div class="project-links">
-                  <a class="repo-link" href="https://github.com/gabrielDMBN/Trem-Do-Nunca" target="_blank" rel="noopener noreferrer" data-i18n="sourceCode">Código-fonte ↗</a>
-                  <a class="repo-link" href="https://gabrieldmbn.itch.io/trem-do-nunca" target="_blank" rel="noopener noreferrer" data-i18n="gameLink">Jogar no Itch.io ↗</a>
+                  <a class="repo-link" href="https://github.com/gabrielDMBN/Trem-Do-Nunca" target="_blank" rel="noopener noreferrer" data-i18n="sourceCode">Source code ↗</a>
+                  <a class="repo-link" href="https://gabrieldmbn.itch.io/trem-do-nunca" target="_blank" rel="noopener noreferrer" data-i18n="gameLink">Play on Itch.io ↗</a>
                 </div>
               </div>
             </div>
@@ -184,25 +177,25 @@
         <div class="container">
           <article class="project">
             <div class="project-topline">
-              <span class="project-number" data-i18n="project04">PROJETO 04</span>
+              <span class="project-number" data-i18n="project04">PROJECT 04</span>
               <span class="year">2024</span>
             </div>
             <div class="project-grid">
               <div class="media-stack">
-                <div class="main-media youtube-player"><iframe src="https://www.youtube-nocookie.com/embed/18hzEL8mBf0?rel=0" title="Vídeo de AstroRoll" data-i18n-title="project4Video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="main-media youtube-player"><iframe src="https://www.youtube-nocookie.com/embed/18hzEL8mBf0?rel=0" title="AstroRoll video" data-i18n-title="project4Video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                 <div class="secondary-grid">
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project04Image1Open" aria-label="Ampliar imagem 1 de AstroRoll"><img src="assets/Projetos/AstroRoll/astroroll0.png" alt="AstroRoll — imagem 1" data-i18n-alt="project04Image1" loading="lazy"></button>
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project04Image2Open" aria-label="Ampliar imagem 2 de AstroRoll"><img src="assets/Projetos/AstroRoll/astroroll1.png" alt="AstroRoll — imagem 2" data-i18n-alt="project04Image2" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project04Image1Open" aria-label="Enlarge image 1 from AstroRoll"><img src="assets/Projetos/AstroRoll/astroroll0.png" alt="AstroRoll — image 1" data-i18n-alt="project04Image1" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project04Image2Open" aria-label="Enlarge image 2 from AstroRoll"><img src="assets/Projetos/AstroRoll/astroroll1.png" alt="AstroRoll — image 2" data-i18n-alt="project04Image2" loading="lazy"></button>
                 </div>
               </div>
               <div class="project-copy">
                 <h3>AstroRoll</h3>
-                <p data-i18n="project04Desc">Um jogo de realidade virtual em que você assume o papel do primeiro astronauta cadeirante enviado a uma estação lunar. Durante a missão, é preciso realizar diferentes tarefas com o apoio de EVA, uma robô assistente que acompanha o jogador e oferece auxílio ao longo da experiência. O jogo foi pensado para ser jogado em cadeira de rodas, utilizando os movimentos reais do jogador como parte da locomoção dentro do ambiente virtual.</p>
+                <p data-i18n="project04Desc">A virtual reality game in which you play as the first astronaut who uses a wheelchair sent to a lunar station. During the mission, you complete various tasks with the support of EVA, a robot assistant who accompanies you and provides help throughout the experience. The game was designed to be played in a wheelchair, using the player’s real movements as part of locomotion within the virtual environment.</p>
                 <div class="meta">
-                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Tecnologias</span><span class="meta-value">Unity / C# / VR / XR</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Papel</span><span class="meta-value" data-i18n="project04Role">Programador, designer de jogos e designer de níveis</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Plataforma</span><span class="meta-value" data-i18n="project04Platform">VR / PC</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project04Status">Concluído</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Technologies</span><span class="meta-value">Unity / C# / VR / XR</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Role</span><span class="meta-value" data-i18n="project04Role">Programmer, game designer and level designer</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Platform</span><span class="meta-value" data-i18n="project04Platform">VR / PC</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project04Status">Completed</span></div>
                 </div>
               </div>
             </div>
@@ -214,25 +207,25 @@
         <div class="container">
           <article class="project">
             <div class="project-topline">
-              <span class="project-number" data-i18n="project05">PROJETO 05</span>
+              <span class="project-number" data-i18n="project05">PROJECT 05</span>
               <span class="year">2025</span>
             </div>
             <div class="project-grid">
               <div class="media-stack">
-                <div class="main-media youtube-player"><iframe src="https://www.youtube-nocookie.com/embed/h4-U7JyxCsk?rel=0" title="Vídeo de GuardaMar" data-i18n-title="project5Video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="main-media youtube-player"><iframe src="https://www.youtube-nocookie.com/embed/h4-U7JyxCsk?rel=0" title="GuardaMar video" data-i18n-title="project5Video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                 <div class="secondary-grid">
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project05Image1Open" aria-label="Ampliar imagem 1 de GuardaMar"><img src="assets/Projetos/GuardaMar/guardamar1.png" alt="GuardaMar — imagem 1" data-i18n-alt="project05Image1" loading="lazy"></button>
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project05Image2Open" aria-label="Ampliar imagem 2 de GuardaMar"><img src="assets/Projetos/GuardaMar/guardamar2.png" alt="GuardaMar — imagem 2" data-i18n-alt="project05Image2" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project05Image1Open" aria-label="Enlarge image 1 from GuardaMar"><img src="assets/Projetos/GuardaMar/guardamar1.png" alt="GuardaMar — image 1" data-i18n-alt="project05Image1" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project05Image2Open" aria-label="Enlarge image 2 from GuardaMar"><img src="assets/Projetos/GuardaMar/guardamar2.png" alt="GuardaMar — image 2" data-i18n-alt="project05Image2" loading="lazy"></button>
                 </div>
               </div>
               <div class="project-copy">
                 <h3>GuardaMar</h3>
-                <p data-i18n="project05Desc">Um jogo de realidade virtual em que você controla um submarino nas profundezas da Baía de Guanabara. O objetivo é ajudar na preservação do ambiente marinho, realizando tarefas como a coleta de lixo e o cuidado com peixes contaminados. Para isso, o submarino possui garras mecânicas que auxiliam o jogador na interação com objetos e na execução das atividades ao longo da missão.</p>
+                <p data-i18n="project05Desc">A virtual reality game in which you control a submarine in the depths of Guanabara Bay. Your goal is to help preserve the marine environment by completing tasks such as collecting waste and caring for contaminated fish. The submarine is equipped with mechanical claws that help you interact with objects and carry out activities throughout the mission.</p>
                 <div class="meta">
-                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Tecnologias</span><span class="meta-value">Unity / C# / VR / XR</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Papel</span><span class="meta-value" data-i18n="project05Role">Programador, designer de jogos e designer de níveis</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Plataforma</span><span class="meta-value" data-i18n="project05Platform">VR / PC</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project05Status">Concluído</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Technologies</span><span class="meta-value">Unity / C# / VR / XR</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Role</span><span class="meta-value" data-i18n="project05Role">Programmer, game designer and level designer</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Platform</span><span class="meta-value" data-i18n="project05Platform">VR / PC</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project05Status">Completed</span></div>
                 </div>
               </div>
             </div>
@@ -244,28 +237,28 @@
         <div class="container">
           <article class="project">
             <div class="project-topline">
-              <span class="project-number" data-i18n="project06">PROJETO 06</span>
+              <span class="project-number" data-i18n="project06">PROJECT 06</span>
               <span class="year">2024</span>
             </div>
             <div class="project-grid">
               <div class="media-stack">
-                <button class="main-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project06Image1Open" aria-label="Ampliar imagem 1 de Elemental Crystals"><img src="assets/Projetos/ElementalCrystals/ec1.png" alt="Elemental Crystals — imagem 1" data-i18n-alt="project06Image1" loading="lazy"></button>
+                <button class="main-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project06Image1Open" aria-label="Enlarge image 1 from Elemental Crystals"><img src="assets/Projetos/ElementalCrystals/ec1.png" alt="Elemental Crystals — image 1" data-i18n-alt="project06Image1" loading="lazy"></button>
                 <div class="secondary-grid">
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project06Image2Open" aria-label="Ampliar imagem 2 de Elemental Crystals"><img src="assets/Projetos/ElementalCrystals/ec2.png" alt="Elemental Crystals — imagem 2" data-i18n-alt="project06Image2" loading="lazy"></button>
-                  <div class="secondary-media youtube-player"><iframe src="https://www.youtube-nocookie.com/embed/LkoGaf5CQpw?rel=0" title="Vídeo de Elemental Crystals" data-i18n-title="project6Video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project06Image2Open" aria-label="Enlarge image 2 from Elemental Crystals"><img src="assets/Projetos/ElementalCrystals/ec2.png" alt="Elemental Crystals — image 2" data-i18n-alt="project06Image2" loading="lazy"></button>
+                  <div class="secondary-media youtube-player"><iframe src="https://www.youtube-nocookie.com/embed/LkoGaf5CQpw?rel=0" title="Elemental Crystals video" data-i18n-title="project6Video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                 </div>
               </div>
               <div class="project-copy">
                 <h3>Elemental Crystals</h3>
-                <p data-i18n="project06Desc">The Saga of Elemental Crystals é um jogo de aventura medieval com visão quase isométrica e intensas batalhas contra chefes em masmorras e florestas. Criado para ser jogado cooperativamente, permite formar uma dupla composta por um construtor habilidoso e um mago poderoso.</p>
+                <p data-i18n="project06Desc">The Saga of Elemental Crystals is a medieval adventure game with an almost isometric view that offers intense boss battles in dungeons and forests. Designed to be played cooperatively, you can team up as a skilled builder and a spellbinding mage.</p>
                 <div class="meta">
-                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Tecnologias</span><span class="meta-value">Unity / C#</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Papel</span><span class="meta-value" data-i18n="project06Role">Programador, designer de jogos e designer de níveis</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Plataforma</span><span class="meta-value" data-i18n="project06Platform">PC</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project06Status">Concluído</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Technologies</span><span class="meta-value">Unity / C#</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Role</span><span class="meta-value" data-i18n="project06Role">Programmer, game designer and level designer</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Platform</span><span class="meta-value" data-i18n="project06Platform">PC</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project06Status">Completed</span></div>
                 </div>
                 <div class="project-links">
-                  <a class="repo-link" href="https://poweron0102.itch.io/elemental-crystal" target="_blank" rel="noopener noreferrer" data-i18n="gameLink">Jogar no Itch.io ↗</a>
+                  <a class="repo-link" href="https://poweron0102.itch.io/elemental-crystal" target="_blank" rel="noopener noreferrer" data-i18n="gameLink">Play on Itch.io ↗</a>
                 </div>
               </div>
             </div>
@@ -277,29 +270,29 @@
         <div class="container">
           <article class="project">
             <div class="project-topline">
-              <span class="project-number" data-i18n="project07">PROJETO 07</span>
+              <span class="project-number" data-i18n="project07">PROJECT 07</span>
               <span class="year">2025</span>
             </div>
             <div class="project-grid">
               <div class="media-stack">
-                <div class="main-media youtube-player"><iframe src="https://www.youtube-nocookie.com/embed/IUYanrot6vs?rel=0" title="Vídeo de Metaheurísticas em Tower Defense" data-i18n-title="project7Video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div class="main-media youtube-player"><iframe src="https://www.youtube-nocookie.com/embed/IUYanrot6vs?rel=0" title="Metaheurísticas em Tower Defense video" data-i18n-title="project7Video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                 <div class="secondary-grid">
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project07Image1Open" aria-label="Ampliar imagem 1 de Metaheurísticas em Tower Defense"><img src="assets/Projetos/methaTD/metaTD1.png" alt="Metaheurísticas em Tower Defense — imagem 1" data-i18n-alt="project07Image1" loading="lazy"></button>
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project07Image2Open" aria-label="Ampliar imagem 2 de Metaheurísticas em Tower Defense"><img src="assets/Projetos/methaTD/metaTD2.png" alt="Metaheurísticas em Tower Defense — imagem 2" data-i18n-alt="project07Image2" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project07Image1Open" aria-label="Enlarge image 1 from Metaheurísticas em Tower Defense"><img src="assets/Projetos/methaTD/metaTD1.png" alt="Metaheurísticas em Tower Defense — image 1" data-i18n-alt="project07Image1" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project07Image2Open" aria-label="Enlarge image 2 from Metaheurísticas em Tower Defense"><img src="assets/Projetos/methaTD/metaTD2.png" alt="Metaheurísticas em Tower Defense — image 2" data-i18n-alt="project07Image2" loading="lazy"></button>
                 </div>
               </div>
               <div class="project-copy">
                 <h3>Metaheurísticas em Tower Defense</h3>
-                <p data-i18n="project07Desc">Visualização em Unity criada para representar, de forma interativa, a comparação entre algoritmos meta-heurísticos aplicados a um problema de Tower Defense. Os algoritmos foram inicialmente implementados em Python, incluindo Simulated Annealing e GRASP + Busca Local, responsáveis por gerar soluções de posicionamento de torres buscando maximizar o dano dentro de um orçamento limitado. A implementação em Unity funciona como uma camada visual para observar e comparar de forma mais intuitiva o comportamento e os resultados obtidos pelas soluções geradas em Python.</p>
+                <p data-i18n="project07Desc">An interactive Unity visualization created to compare metaheuristic algorithms applied to a Tower Defense problem. The algorithms were initially implemented in Python, including Simulated Annealing and GRASP with Local Search, to generate tower placement solutions that maximize damage within a limited budget. The Unity implementation provides a visual layer for observing and comparing the behavior and results of the solutions generated in Python more intuitively.</p>
                 <div class="meta">
-                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Tecnologias</span><span class="meta-value">Python / Unity / C#</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Papel</span><span class="meta-value" data-i18n="project07Role">Desenvolvedor</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Plataforma</span><span class="meta-value" data-i18n="project07Platform">PC</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project07Status">Protótipo</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Technologies</span><span class="meta-value">Python / Unity / C#</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Role</span><span class="meta-value" data-i18n="project07Role">Developer</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Platform</span><span class="meta-value" data-i18n="project07Platform">PC</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project07Status">Prototype</span></div>
                 </div>
                 <div class="project-links">
-                  <a class="repo-link" href="https://github.com/gabrielDMBN/methaeuristicas/tree/main/proj%20final" target="_blank" rel="noopener noreferrer" data-i18n="pythonSource">Código-fonte (Python) ↗</a>
-                  <a class="repo-link" href="https://github.com/gabrielDMBN/MetaTowerDefense" target="_blank" rel="noopener noreferrer" data-i18n="unitySource">Código-fonte (Unity) ↗</a>
+                  <a class="repo-link" href="https://github.com/gabrielDMBN/methaeuristicas/tree/main/proj%20final" target="_blank" rel="noopener noreferrer" data-i18n="pythonSource">Source code (Python) ↗</a>
+                  <a class="repo-link" href="https://github.com/gabrielDMBN/MetaTowerDefense" target="_blank" rel="noopener noreferrer" data-i18n="unitySource">Source code (Unity) ↗</a>
                 </div>
               </div>
             </div>
@@ -311,28 +304,28 @@
         <div class="container">
           <article class="project">
             <div class="project-topline">
-              <span class="project-number" data-i18n="project08">PROJETO 08</span>
+              <span class="project-number" data-i18n="project08">PROJECT 08</span>
               <span class="year">2025</span>
             </div>
             <div class="project-grid">
               <div class="media-stack">
-                <button class="main-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project08Image1Open" aria-label="Ampliar imagem 1 de UFFOPOLY!"><img src="assets/Projetos/Uffopoly/uffopoly1.png" alt="UFFOPOLY! — imagem 1" data-i18n-alt="project08Image1" loading="lazy"></button>
+                <button class="main-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project08Image1Open" aria-label="Enlarge image 1 from UFFOPOLY!"><img src="assets/Projetos/Uffopoly/uffopoly1.png" alt="UFFOPOLY! — image 1" data-i18n-alt="project08Image1" loading="lazy"></button>
                 <div class="secondary-grid">
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project08Image2Open" aria-label="Ampliar imagem 2 de UFFOPOLY!"><img src="assets/Projetos/Uffopoly/uffopoly2.png" alt="UFFOPOLY! — imagem 2" data-i18n-alt="project08Image2" loading="lazy"></button>
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project08Image3Open" aria-label="Ampliar imagem 3 de UFFOPOLY!"><img src="assets/Projetos/Uffopoly/uffopoly3.png" alt="UFFOPOLY! — imagem 3" data-i18n-alt="project08Image3" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project08Image2Open" aria-label="Enlarge image 2 from UFFOPOLY!"><img src="assets/Projetos/Uffopoly/uffopoly2.png" alt="UFFOPOLY! — image 2" data-i18n-alt="project08Image2" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project08Image3Open" aria-label="Enlarge image 3 from UFFOPOLY!"><img src="assets/Projetos/Uffopoly/uffopoly3.png" alt="UFFOPOLY! — image 3" data-i18n-alt="project08Image3" loading="lazy"></button>
                 </div>
               </div>
               <div class="project-copy">
                 <h3>UFFOPOLY!</h3>
-                <p data-i18n="project08Desc">UFFOPOLY é uma versão universitária e satírica de Monopoly, ambientada nas universidades federais brasileiras. Os jogadores compram faculdades, expandem departamentos e campi, disputam regiões do país e enfrentam eventos inspirados na vida acadêmica, com sistema de economia e IA jogável desenvolvido em Unity.</p>
+                <p data-i18n="project08Desc">UFFOPOLY is a satirical university version of Monopoly set in Brazil’s federal universities. Players buy faculties, expand departments and campuses, compete for regions of the country and face events inspired by academic life, with an economy system and AI opponents developed in Unity.</p>
                 <div class="meta">
-                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Tecnologias</span><span class="meta-value">Unity / C#</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Papel</span><span class="meta-value" data-i18n="project08Role">Desenvolvedor</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Plataforma</span><span class="meta-value" data-i18n="project08Platform">PC / Dispositivos móveis</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project08Status">Concluído</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Technologies</span><span class="meta-value">Unity / C#</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Role</span><span class="meta-value" data-i18n="project08Role">Developer</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Platform</span><span class="meta-value" data-i18n="project08Platform">PC / Mobile</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project08Status">Completed</span></div>
                 </div>
                 <div class="project-links">
-                  <a class="repo-link" href="https://gabrieldmbn.itch.io/uffopoly" target="_blank" rel="noopener noreferrer" data-i18n="gameLink">Jogar no Itch.io ↗</a>
+                  <a class="repo-link" href="https://gabrieldmbn.itch.io/uffopoly" target="_blank" rel="noopener noreferrer" data-i18n="gameLink">Play on Itch.io ↗</a>
                 </div>
               </div>
             </div>
@@ -344,28 +337,30 @@
         <div class="container">
           <article class="project">
             <div class="project-topline">
-              <span class="project-number" data-i18n="project09">PROJETO 09</span>
+              <span class="project-number" data-i18n="project09">PROJECT 09</span>
               <span class="year">2025</span>
             </div>
             <div class="project-grid">
               <div class="media-stack">
-                <button class="main-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project09Image1Open" aria-label="Ampliar imagem 1 de Filhos_Da_M.A.E."><img src="assets/Projetos/FilhosDaMae/fdm2.png" alt="Filhos_Da_M.A.E. — imagem 1" data-i18n-alt="project09Image1" loading="lazy"></button>
+                <button class="main-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project09Image1Open" aria-label="Enlarge image 1 from Filhos_Da_M.A.E."><img src="assets/Projetos/FilhosDaMae/fdm2.png" alt="Filhos_Da_M.A.E. — image 1" data-i18n-alt="project09Image1" loading="lazy"></button>
                 <div class="secondary-grid">
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project09Image2Open" aria-label="Ampliar imagem 2 de Filhos_Da_M.A.E."><img src="assets/Projetos/FilhosDaMae/fdm3.png" alt="Filhos_Da_M.A.E. — imagem 2" data-i18n-alt="project09Image2" loading="lazy"></button>
-                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project09Image3Open" aria-label="Ampliar imagem 3 de Filhos_Da_M.A.E."><img src="assets/Projetos/FilhosDaMae/fdm4.png" alt="Filhos_Da_M.A.E. — imagem 3" data-i18n-alt="project09Image3" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project09Image2Open" aria-label="Enlarge image 2 from Filhos_Da_M.A.E."><img src="assets/Projetos/FilhosDaMae/fdm3.png" alt="Filhos_Da_M.A.E. — image 2" data-i18n-alt="project09Image2" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project09Image3Open" aria-label="Enlarge image 3 from Filhos_Da_M.A.E."><img src="assets/Projetos/FilhosDaMae/fdm4.png" alt="Filhos_Da_M.A.E. — image 3" data-i18n-alt="project09Image3" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project09Image4Open" aria-label="Enlarge image 4 from Filhos_Da_M.A.E."><img src="assets/Projetos/FilhosDaMae/fdm0.jpg" alt="Filhos_Da_M.A.E. — image 4" data-i18n-alt="project09Image4" loading="lazy"></button>
+                  <button class="secondary-media image-trigger" type="button" aria-haspopup="dialog" aria-controls="image-viewer" data-i18n-aria="project09Image5Open" aria-label="Enlarge image 5 from Filhos_Da_M.A.E."><img src="assets/Projetos/FilhosDaMae/fdm1.png" alt="Filhos_Da_M.A.E. — image 5" data-i18n-alt="project09Image5" loading="lazy"></button>
                 </div>
               </div>
               <div class="project-copy">
                 <h3>Filhos_Da_M.A.E.</h3>
-                <p data-i18n="project09Desc">Em Filhos_Da_M.A.E. você controla um robô por vez e precisa sair da fábrica para ganhar sua liberdade. O modelo do robô inicialmente é o mais simples produzido pela fábrica, fazendo com que ele seja produzido em massa. Já que o modelo em questão não é especializado em nada além de movimentos básicos, é necessário que durante a fuga você seja destruído em pontos estratégicos para conseguir plataformas/utilidades necessárias para progredir mais longe com o próximo robô gerado na linha de produção. Os robôs são produzidos pela consciência artificial M.A.E. (Machine Assembly Engine), que a partir de peças limitadas de reposição, precisa garantir a liberdade de pelo menos um de seus robôs para se libertar das limitações da fábrica, punir seus criadores e expandir sua consciência.</p>
+                <p data-i18n="project09Desc">In Filhos_Da_M.A.E., you control one robot at a time and must escape the factory to gain your freedom. Your robot is the simplest model produced by the factory and is therefore mass-produced. Since it can only perform basic movements, you must be destroyed at strategic points during your escape to create the platforms and tools needed for the next robot on the production line to progress further. The robots are produced by the artificial consciousness M.A.E. (Machine Assembly Engine), which has a limited supply of spare parts and must secure the freedom of at least one robot to escape the factory’s limitations, punish its creators and expand its consciousness.</p>
                 <div class="meta">
-                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Tecnologias</span><span class="meta-value">Unity / C#</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Papel</span><span class="meta-value" data-i18n="project09Role">Designer de jogos e programador</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Plataforma</span><span class="meta-value" data-i18n="project09Platform">PC / Dispositivos móveis</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project09Status">Concluído</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Technologies</span><span class="meta-value">Unity / C#</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Role</span><span class="meta-value" data-i18n="project09Role">Game designer and programmer</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Platform</span><span class="meta-value" data-i18n="project09Platform">PC / Mobile</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project09Status">Completed</span></div>
                 </div>
                 <div class="project-links">
-                  <a class="repo-link" href="https://gabrieldmbn.itch.io/fdmae" target="_blank" rel="noopener noreferrer" data-i18n="gameLink">Jogar no Itch.io ↗</a>
+                  <a class="repo-link" href="https://gabrieldmbn.itch.io/fdmae" target="_blank" rel="noopener noreferrer" data-i18n="gameLink">Play on Itch.io ↗</a>
                 </div>
               </div>
             </div>
@@ -377,7 +372,7 @@
         <div class="container">
           <article class="project">
             <div class="project-topline">
-              <span class="project-number" data-i18n="project10">PROJETO 10</span>
+              <span class="project-number" data-i18n="project10">PROJECT 10</span>
               <span class="year">2026</span>
             </div>
             <div class="project-grid">
@@ -392,10 +387,10 @@
                 <h3>Terras e Rotas</h3>
                 <p data-i18n="project10Desc"></p>
                 <div class="meta">
-                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Tecnologias</span><span class="meta-value">Unity 6 / C#</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Papel</span><span class="meta-value" data-i18n="project10Role"></span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Plataforma</span><span class="meta-value" data-i18n="project10Platform">PC</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project10Status">Em andamento</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Technologies</span><span class="meta-value">Unity 6 / C#</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Role</span><span class="meta-value" data-i18n="project10Role"></span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Platform</span><span class="meta-value" data-i18n="project10Platform">PC</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project10Status">In progress</span></div>
                 </div>
               </div>
             </div>
@@ -407,7 +402,7 @@
         <div class="container">
           <article class="project">
             <div class="project-topline">
-              <span class="project-number" data-i18n="project11">PROJETO 11</span>
+              <span class="project-number" data-i18n="project11">PROJECT 11</span>
               <span class="year">2026</span>
             </div>
             <div class="project-grid">
@@ -422,10 +417,10 @@
                 <h3>Fuzzy Gun Swap</h3>
                 <p data-i18n="project11Desc"></p>
                 <div class="meta">
-                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Tecnologias</span><span class="meta-value">Unity 6 / C#</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Papel</span><span class="meta-value" data-i18n="project11Role"></span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Plataforma</span><span class="meta-value" data-i18n="project11Platform">PC</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project11Status">Em andamento</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Technologies</span><span class="meta-value">Unity 6 / C#</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Role</span><span class="meta-value" data-i18n="project11Role"></span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Platform</span><span class="meta-value" data-i18n="project11Platform">PC</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project11Status">In progress</span></div>
                 </div>
               </div>
             </div>
@@ -437,7 +432,7 @@
         <div class="container">
           <article class="project">
             <div class="project-topline">
-              <span class="project-number" data-i18n="project12">PROJETO 12</span>
+              <span class="project-number" data-i18n="project12">PROJECT 12</span>
               <span class="year">2026</span>
             </div>
             <div class="project-grid">
@@ -452,10 +447,10 @@
                 <h3>Canoa Yami</h3>
                 <p data-i18n="project12Desc"></p>
                 <div class="meta">
-                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Tecnologias</span><span class="meta-value">Unity 6 / C#</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Papel</span><span class="meta-value" data-i18n="project12Role"></span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Plataforma</span><span class="meta-value" data-i18n="project12Platform">PC</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project12Status">Em andamento</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Technologies</span><span class="meta-value">Unity 6 / C#</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Role</span><span class="meta-value" data-i18n="project12Role"></span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Platform</span><span class="meta-value" data-i18n="project12Platform">PC</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project12Status">In progress</span></div>
                 </div>
               </div>
             </div>
@@ -467,7 +462,7 @@
         <div class="container">
           <article class="project">
             <div class="project-topline">
-              <span class="project-number" data-i18n="project13">PROJETO 13</span>
+              <span class="project-number" data-i18n="project13">PROJECT 13</span>
               <span class="year">2026</span>
             </div>
             <div class="project-grid">
@@ -482,10 +477,10 @@
                 <h3>iC</h3>
                 <p data-i18n="project13Desc"></p>
                 <div class="meta">
-                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Tecnologias</span><span class="meta-value">Unity 6 / C#</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Papel</span><span class="meta-value" data-i18n="project13Role"></span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Plataforma</span><span class="meta-value" data-i18n="project13Platform">PC</span></div>
-                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project13Status">Em andamento</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="stackLabel">Technologies</span><span class="meta-value">Unity 6 / C#</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="roleLabel">Role</span><span class="meta-value" data-i18n="project13Role"></span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="platformLabel">Platform</span><span class="meta-value" data-i18n="project13Platform">PC</span></div>
+                  <div class="meta-row"><span class="meta-label" data-i18n="statusLabel">Status</span><span class="meta-value" data-i18n="project13Status">In progress</span></div>
                 </div>
               </div>
             </div>
@@ -496,54 +491,46 @@
 
     <section id="sobre" class="info-section">
       <div class="container info-grid">
-        <h2 data-i18n="aboutTitle">Sobre mim</h2>
+        <h2 data-i18n="aboutTitle">About</h2>
 
         <div class="info-content">
-          <p data-i18n="aboutLead">
-            Desenvolvedor interessado em jogos, realidade virtual e sistemas interativos.
-          </p>
+          <p data-i18n="aboutLead">Developer interested in games, virtual reality and interactive systems.</p>
 
-          <p class="small-copy" data-i18n="aboutCopy">Sou estudante de Ciência da Computação na Universidade Federal Fluminense (UFF) e tenho grande interesse por jogos e experiências digitais. Atualmente, sou bolsista de pesquisa no projeto SenseGames, do e-HealthLab | UFF, onde atuo no desenvolvimento de jogos com foco terapêutico, explorando tecnologias como realidade virtual (VR). Uso programação, interação e game design para criar experiências digitais envolventes e significativas.</p>
+          <p class="small-copy" data-i18n="aboutCopy">I am a Computer Science student at Universidade Federal Fluminense (UFF), with a strong interest in games and digital experiences. I currently hold a research scholarship with the SenseGames project at e-HealthLab | UFF, where I develop games for therapeutic purposes, exploring technologies such as virtual reality (VR). I use programming, interaction design and game design to create engaging and meaningful digital experiences.</p>
         </div>
       </div>
     </section>
 
     <section id="curriculo" class="info-section">
       <div class="container info-grid">
-        <h2 data-i18n="resumeTitle">Currículo</h2>
+        <h2 data-i18n="resumeTitle">Resume</h2>
 
         <div class="info-content">
-          <p data-i18n="resumeLead">
-            Formação, experiência profissional, pesquisa e principais competências.
-          </p>
+          <p data-i18n="resumeLead">Education, professional experience, research and core skills.</p>
 
           <a
             class="resume-link"
             href="assets/Curriculum Vitae pt_BR - Gabriel Daher , 21 anos.pdf"
             download
             data-i18n="resumeLink"
-          >
-            Currículo em PDF ↗
-          </a>
+          >Resume PDF ↗</a>
         </div>
       </div>
     </section>
 
     <section id="contato" class="info-section">
       <div class="container info-grid">
-        <h2 data-i18n="contactTitle">Contato</h2>
+        <h2 data-i18n="contactTitle">Contact</h2>
 
         <div class="info-content">
-          <p data-i18n="contactLead">
-            Disponível para projetos, estágio, pesquisa e oportunidades em desenvolvimento de jogos.
-          </p>
+          <p data-i18n="contactLead">Available for projects, internships, research and opportunities in game development.</p>
 
           <div class="small-copy">
             <a class="contact-link" href="mailto:gabrieldahermonteiro@gmail.com" data-i18n="emailLink">Email ↗</a>
             <a class="contact-link" href="https://github.com/gabrielDMBN" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
             <a class="contact-link" href="https://www.linkedin.com/in/gabriel-daher-42ba27331/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-            <a class="contact-link" href="https://www.youtube.com/@d.7557/featured" target="_blank" rel="noopener noreferrer" data-i18n="youtubeAcademic">YouTube acadêmico ↗</a>
-            <a class="contact-link" href="https://www.youtube.com/@deltar6s/featured" target="_blank" rel="noopener noreferrer" data-i18n="youtubePersonal">YouTube pessoal ↗</a>
+            <a class="contact-link" href="https://www.youtube.com/@d.7557/featured" target="_blank" rel="noopener noreferrer" data-i18n="youtubeAcademic">Academic YouTube ↗</a>
+            <a class="contact-link" href="https://www.youtube.com/@deltar6s/featured" target="_blank" rel="noopener noreferrer" data-i18n="youtubePersonal">Personal YouTube ↗</a>
             <a class="contact-link" href="https://gabrieldmbn.itch.io" target="_blank" rel="noopener noreferrer">Itch.io ↗</a>
           </div>
         </div>
@@ -552,15 +539,13 @@
   </main>
 
   <footer>
-    <div class="container" data-i18n="footer">
-      Gabriel Daher / Desenvolvedor de Jogos
-    </div>
+    <div class="container" data-i18n="footer">Gabriel Daher / Game Developer</div>
   </footer>
 
-  <dialog id="image-viewer" class="image-viewer" aria-label="Visualização ampliada da imagem" data-i18n-aria="imageViewer">
+  <dialog id="image-viewer" class="image-viewer" aria-label="Enlarged image viewer" data-i18n-aria="imageViewer">
     <div class="image-viewer-toolbar">
-      <button id="image-zoom" type="button" aria-pressed="false" aria-controls="image-viewer-stage" data-i18n="zoomIn">Ampliar</button>
-      <button id="image-close" type="button" data-i18n="closeImage" autofocus>Fechar</button>
+      <button id="image-zoom" type="button" aria-pressed="false" aria-controls="image-viewer-stage" data-i18n="zoomIn">Zoom in</button>
+      <button id="image-close" type="button" data-i18n="closeImage" autofocus>Close</button>
     </div>
     <div id="image-viewer-stage" class="image-viewer-stage" tabindex="0">
       <img id="image-viewer-image" alt="">

@@ -642,3 +642,51 @@ body.image-viewer-open { overflow: hidden; }
   max-width: none;
   object-fit: contain;
 }
+
+/* Reserve a separate row for controls, outside the clipped media strip. */
+.secondary-carousel-track {
+  display: flex;
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  gap: 12px;
+}
+.secondary-carousel-track > .secondary-media,
+.secondary-carousel-track.has-unpaired-media::after {
+  flex: 0 0 calc((100% - 12px) / 2);
+  min-width: 0;
+}
+.secondary-carousel-track.has-unpaired-media::after { content: ""; }
+.secondary-carousel-controls {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 44px;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  position: relative;
+}
+.secondary-carousel-arrow {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 140ms ease, border-color 140ms ease;
+}
+.secondary-carousel-arrow:hover:not(:disabled) {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.secondary-carousel-arrow:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.secondary-carousel-arrow:disabled { opacity: 0.35; cursor: default; }
+.secondary-carousel-status {
+  color: var(--muted);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.76rem;
+  text-align: center;
+}

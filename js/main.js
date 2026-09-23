@@ -6,6 +6,13 @@
 
     const translations = {
   "pt": {
+    "previousMedia": "Mostrar o par anterior de mídias",
+    "nextMedia": "Mostrar o próximo par de mídias",
+    "mediaPages": "Navegação das mídias secundárias",
+    "project09Image4": "Filhos_Da_M.A.E. — imagem 4",
+    "project09Image4Open": "Ampliar imagem 4 de Filhos_Da_M.A.E.",
+    "project09Image5": "Filhos_Da_M.A.E. — imagem 5",
+    "project09Image5Open": "Ampliar imagem 5 de Filhos_Da_M.A.E.",
     "htmlLang": "pt-BR",
     "pageTitle": "Gabriel Daher | Desenvolvedor de Jogos",
     "metaDescription": "Portfólio de desenvolvimento de jogos de Gabriel Daher.",
@@ -166,6 +173,13 @@
     "project13Platform": "PC"
   },
   "en": {
+    "previousMedia": "Show the previous media pair",
+    "nextMedia": "Show the next media pair",
+    "mediaPages": "Secondary media navigation",
+    "project09Image4": "Filhos_Da_M.A.E. — image 4",
+    "project09Image4Open": "Enlarge image 4 from Filhos_Da_M.A.E.",
+    "project09Image5": "Filhos_Da_M.A.E. — image 5",
+    "project09Image5Open": "Enlarge image 5 from Filhos_Da_M.A.E.",
     "htmlLang": "en",
     "pageTitle": "Gabriel Daher | Game Developer",
     "metaDescription": "Game development portfolio by Gabriel Daher.",
@@ -328,12 +342,9 @@
 };
 
     let currentLanguage =
-      localStorage.getItem("language") === "en" ? "en" :
-      localStorage.getItem("language") === "pt" ? "pt" :
-      navigator.language.toLowerCase().startsWith("pt") ? "pt" : "en";
+      localStorage.getItem("language") === "pt" ? "pt" : "en";
 
     const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
     function updateThemeButton() {
       const t = translations[currentLanguage];
@@ -393,7 +404,7 @@
     if (savedTheme === "dark" || savedTheme === "light") {
       root.setAttribute("data-theme", savedTheme);
     } else {
-      root.setAttribute("data-theme", prefersDark ? "dark" : "light");
+      root.setAttribute("data-theme", "dark");
     }
 
     setLanguage(currentLanguage);
@@ -451,4 +462,70 @@ imageZoom.addEventListener("click", () => {
   imageZoom.setAttribute("aria-pressed", String(zoomed));
   imageZoom.textContent = translations[currentLanguage][zoomed ? "zoomOut" : "zoomIn"];
   viewerStage.scrollTo(0, 0);
+});
+
+document.querySelectorAll(".secondary-grid").forEach((track, index) => {
+  const items = Array.from(track.children);
+  if (items.length <= 2) return;
+
+  const pageCount = Math.ceil(items.length / 2);
+  let page = 0;
+  track.id = `secondary-media-${index + 1}`;
+  track.classList.add("secondary-carousel-track");
+  track.classList.toggle("has-unpaired-media", items.length % 2 !== 0);
+
+  const controls = document.createElement("div");
+  controls.className = "secondary-carousel-controls";
+  controls.setAttribute("role", "group");
+  controls.dataset.i18nAria = "mediaPages";
+  controls.setAttribute("aria-label", translations[currentLanguage].mediaPages);
+
+  function createArrow(label, symbol) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "secondary-carousel-arrow";
+    button.dataset.i18nAria = label;
+    button.setAttribute("aria-label", translations[currentLanguage][label]);
+    button.setAttribute("aria-controls", track.id);
+    const icon = document.createElement("span");
+    icon.setAttribute("aria-hidden", "true");
+    icon.textContent = symbol;
+    button.append(icon);
+    return button;
+  }
+
+  const previous = createArrow("previousMedia", "←");
+  const next = createArrow("nextMedia", "→");
+  const status = document.createElement("span");
+  status.className = "secondary-carousel-status";
+  status.setAttribute("aria-live", "polite");
+  status.setAttribute("aria-atomic", "true");
+  controls.append(previous, status, next);
+  track.after(controls);
+
+  function showPage(animate = true) {
+    // Keep the same image and iframe nodes mounted while the strip moves.
+    const left = items[page * 2].offsetLeft - items[0].offsetLeft;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    track.scrollTo({ left, behavior: animate && !reduceMotion ? "smooth" : "instant" });
+    items.forEach((item, itemIndex) => {
+      const visible = Math.floor(itemIndex / 2) === page;
+      item.inert = !visible;
+      item.setAttribute("aria-hidden", String(!visible));
+    });
+    previous.disabled = page === 0;
+    next.disabled = page === pageCount - 1;
+    status.textContent = `${page + 1} / ${pageCount}`;
+  }
+
+  previous.addEventListener("click", () => {
+    page = Math.max(0, page - 1);
+    showPage();
+  });
+  next.addEventListener("click", () => {
+    page = Math.min(pageCount - 1, page + 1);
+    showPage();
+  });
+  new ResizeObserver(() => showPage(false)).observe(track);
+  showPage(false);
 });
