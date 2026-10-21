@@ -25,6 +25,7 @@
     "themeLight": "Claro",
     "eyebrow": "Desenvolvedor de Jogos / Unity / XR",
     "heroTitle": "Jogos, sistemas e experiências interativas.",
+    "heroTitleAccent": "experiências interativas.",
     "heroCopy": "Portfólio de projetos de desenvolvimento de jogos, experiências em realidade virtual e trabalhos acadêmicos relacionados a interação e tecnologia.",
     "projectsTitle": "Projetos",
     "projectsSubtitle": "Seleção de trabalhos",
@@ -243,6 +244,7 @@
     "themeLight": "Light",
     "eyebrow": "Game Developer / Unity / XR",
     "heroTitle": "Games, systems and interactive experiences.",
+    "heroTitleAccent": "experiences.",
     "heroCopy": "A portfolio of game development projects, virtual reality experiences and academic work related to interaction and technology.",
     "projectsTitle": "Projects",
     "projectsSubtitle": "Selected work",
@@ -451,7 +453,9 @@
     function updateThemeButton() {
       const t = translations[currentLanguage];
       const isDark = root.getAttribute("data-theme") === "dark";
-      themeButton.textContent = isDark ? t.themeLight : t.themeDark;
+      const label = isDark ? t.themeLight : t.themeDark;
+      document.getElementById("theme-label").textContent = label;
+      themeButton.setAttribute("title", label);
       themeButton.setAttribute("aria-label", t.themeAria);
       themeButton.setAttribute("aria-pressed", String(isDark));
     }
@@ -474,6 +478,12 @@
         const key = element.dataset.i18n;
         if (t[key] !== undefined) {
           element.textContent = t[key];
+          if (key === "heroTitle") {
+            const accent = document.createElement("span");
+            accent.className = "hero-accent";
+            accent.textContent = t.heroTitleAccent;
+            element.replaceChildren(t[key].slice(0, -t.heroTitleAccent.length), accent);
+          }
         }
       });
 
@@ -596,13 +606,23 @@ document.querySelectorAll(".secondary-grid").forEach((track, index) => {
     return button;
   }
 
-  const previous = createArrow("previousMedia", "←");
-  const next = createArrow("nextMedia", "→");
+  const previous = createArrow("previousMedia", "‹");
+  const next = createArrow("nextMedia", "›");
+  const progress = document.createElement("div");
+  progress.className = "secondary-carousel-progress";
   const status = document.createElement("span");
-  status.className = "secondary-carousel-status";
+  status.className = "secondary-carousel-status sr-only";
   status.setAttribute("aria-live", "polite");
   status.setAttribute("aria-atomic", "true");
-  controls.append(previous, status, next);
+  const dots = Array.from({ length: pageCount }, () => {
+    const dot = document.createElement("span");
+    dot.className = "secondary-carousel-dot";
+    dot.setAttribute("aria-hidden", "true");
+    progress.append(dot);
+    return dot;
+  });
+  progress.append(status);
+  controls.append(previous, progress, next);
   track.after(controls);
 
   function showPage(animate = true) {
@@ -618,6 +638,7 @@ document.querySelectorAll(".secondary-grid").forEach((track, index) => {
     previous.disabled = page === 0;
     next.disabled = page === pageCount - 1;
     status.textContent = `${page + 1} / ${pageCount}`;
+    dots.forEach((dot, index) => dot.classList.toggle("is-active", index === page));
   }
 
   previous.addEventListener("click", () => {
