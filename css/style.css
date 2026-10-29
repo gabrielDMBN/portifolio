@@ -503,8 +503,7 @@
       letter-spacing: 0;
     }
 
-    .resume-link,
-    .contact-link {
+    .resume-link {
       display: inline-block;
       margin-right: 24px;
       margin-top: 8px;
@@ -512,6 +511,38 @@
       font-size: 0.78rem;
       text-transform: uppercase;
       letter-spacing: 0.04em;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      flex: 0 0 48px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--text);
+      text-decoration: none;
+      transition: color 140ms ease, border-color 140ms ease;
+    }
+
+    .contact-icon { display: block; width: 26px; height: 26px; }
+
+    .contact-link:hover,
+    .contact-link:focus-visible { border-color: var(--accent); }
+
+    .contact-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
     }
 
     footer {
